@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* shared styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.br-ck{
+    border: 2px solid red;
+}
+
+.width-80-percent {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.width-100-percent {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.flex-dir-col {
+    flex-direction: column;
+}
+
+.jt-content {
+    justify-content: center;
+}
+
+.al-items {
+    align-items: center;
+}
+
+.dark-2 {
+    /* color: rgb(206, 21, 21); */
+    color: rgba(66, 66, 66, 1);
+}
+
+.width-50-percent {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 21px 24px 20px 25px;
+    font-size: 1.20rem;
+    font-weight: 600;
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 8px;
+}
+
+.bg-color {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+/* navbar styles starts here */
+
+nav {
+    /* flex-direction: column; */
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heightwise-center {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+nav a {
+    text-decoration: none; 
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.nav_bar_content {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* banner styles starts here */
+  
+.banner_title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-top: 50px;
+}
+
+.banner {
+    text-align: center;     
+}
+
+.description{
+    margin-top: 25px;
+}
+
+.btn {
+    margin-top: 35px;
+}
+.banner-img img{
+    width: 100%;
+    margin-top: 50px;
+}
+
+/* for small devices */
+
+@media screen and (max-width: 576px) {
+    nav, .nav_bar_content{
+        flex-direction: column;
+        text-align: center; 
+    }
+    .active {
+        margin: 10px auto; 
+        padding-left: 0;
+    }
+    .banner-img img, .banner_title{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav, .nav_bar_content{
+        text-align: center; 
+    }   
+    nav li {
+        margin-left: 30px;
+    }
+}
